@@ -35,4 +35,13 @@ return [
         ],
     ],
 
+    'gps' => [
+        'login_url' => env('GPS_LOGIN_URL', 'https://portal.gps.id/backend/api/single_login'),
+        'monitoring_url' => env('GPS_MONITORING_URL', 'https://portal.gps.id/backend/seen/gps/list_monitoring'),
+        'username' => env('GPS_USERNAME', 'kotapalu'),
+        'password' => env('GPS_PASSWORD', 'DLHplw24'),
+        'default_lat' => env('GPS_PALU_DEFAULT_LAT', -0.9),
+        'default_lng' => env('GPS_PALU_DEFAULT_LNG', 119.87),
+    ],
+
 ];
