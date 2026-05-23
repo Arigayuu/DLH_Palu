@@ -20,6 +20,8 @@ class IkmResponseResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
     protected static ?string $navigationLabel = 'Responden IKM';
+    protected static ?string $modelLabel = 'Responden IKM';
+    protected static ?string $pluralModelLabel = 'Responden IKM';
     protected static ?int $navigationSort = 4;
 
     public static function form(Schema $schema): Schema
@@ -39,12 +41,16 @@ class IkmResponseResource extends Resource
         ];
     }
 
+    public static function canCreate(): bool
+    {
+        return false;
+    }
+
     public static function getPages(): array
     {
         return [
             'index' => ListIkmResponses::route('/'),
-            'create' => CreateIkmResponse::route('/create'),
-            'edit' => EditIkmResponse::route('/{record}/edit'),
+            'view' => \App\Filament\Resources\IkmResponses\Pages\ViewIkmResponse::route('/{record}'),
         ];
     }
 }

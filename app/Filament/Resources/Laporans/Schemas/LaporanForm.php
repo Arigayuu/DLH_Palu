@@ -29,7 +29,8 @@ class LaporanForm
                                 TextInput::make('nomor_hp')
                                     ->label('Nomor HP')
                                     ->required()
-                                    ->tel(),
+                                    ->tel()
+                                    ->disabledOn('edit'),
                                 Select::make('kategori')
                                     ->label('Kategori')
                                     ->options([
@@ -37,12 +38,14 @@ class LaporanForm
                                         'Rawan' => 'Rawan',
                                         'Kabel' => 'Kabel',
                                     ])
-                                    ->required(),
+                                    ->required()
+                                    ->disabledOn('edit'),
                             ]),
                         Textarea::make('deskripsi')
                             ->label('Deskripsi Masalah')
                             ->required()
-                            ->columnSpanFull(),
+                            ->columnSpanFull()
+                            ->disabledOn('edit'),
                     ]),
 
                 Section::make('Koordinat Lokasi')
@@ -52,11 +55,13 @@ class LaporanForm
                                 TextInput::make('latitude')
                                     ->label('Latitude')
                                     ->required()
-                                    ->numeric(),
+                                    ->numeric()
+                                    ->disabledOn('edit'),
                                 TextInput::make('longitude')
                                     ->label('Longitude')
                                     ->required()
-                                    ->numeric(),
+                                    ->numeric()
+                                    ->disabledOn('edit'),
                             ]),
                     ]),
 

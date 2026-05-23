@@ -12,6 +12,7 @@ use Filament\Actions\Action;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Maatwebsite\Excel\Facades\Excel;
+use Filament\Actions\ViewAction;
 
 class IkmResponsesTable
 {
@@ -78,7 +79,7 @@ class IkmResponsesTable
                     }),
             ])
             ->recordActions([
-                EditAction::make(),
+                ViewAction::make(),
             ])
             ->toolbarActions([
                 BulkActionGroup::make([
