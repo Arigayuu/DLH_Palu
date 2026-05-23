@@ -60,6 +60,10 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 Authenticate::class,
-            ]);
+            ])
+            ->renderHook(
+                \Filament\View\PanelsRenderHook::AUTH_LOGIN_FORM_AFTER,
+                fn (): \Illuminate\Contracts\View\View => view('filament.auth.login-back-button'),
+            );
     }
 }
