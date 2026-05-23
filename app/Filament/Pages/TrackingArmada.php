@@ -14,7 +14,7 @@ class TrackingArmada extends Dashboard
 
     protected static string $routePath = '/tracking-armada';
 
-    protected static ?int $navigationSort = 1;
+    protected static ?int $navigationSort = 2;
 
     protected static \BackedEnum|string|null $navigationIcon = 'heroicon-o-map';
 

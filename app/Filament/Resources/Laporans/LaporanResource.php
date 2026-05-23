@@ -21,6 +21,8 @@ class LaporanResource extends Resource
     protected static ?string $model = Laporan::class;
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static ?string $navigationLabel = 'Laporan Pohon';
+    protected static ?int $navigationSort = 3;
 
     protected static ?string $recordTitleAttribute = 'nomor_tiket';
 

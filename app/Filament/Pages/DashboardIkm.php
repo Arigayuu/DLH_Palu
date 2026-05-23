@@ -14,7 +14,7 @@ class DashboardIkm extends Dashboard
 
     protected static string $routePath = '/dashboard-ikm';
 
-    protected static ?int $navigationSort = 2;
+    protected static ?int $navigationSort = 5;
 
     protected static \BackedEnum|string|null $navigationIcon = 'heroicon-o-chart-bar';
 
