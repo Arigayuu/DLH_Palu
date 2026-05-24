@@ -101,8 +101,9 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="text-center">
-                <div class="mx-auto size-16 bg-brand-100 text-brand-600 dark:bg-brand-900/30 dark:text-brand-400 rounded-full flex items-center justify-center text-2xl mb-4">
+            <div class="text-center relative">
+                <div class="hidden md:block absolute top-8 left-1/2 -z-10 w-full border-t border-dashed border-slate-300 dark:border-slate-700"></div>
+                <div class="mx-auto size-16 bg-brand-100 text-brand-600 dark:bg-brand-900/30 dark:text-brand-400 rounded-full flex items-center justify-center text-2xl mb-4 bg-white dark:bg-slate-900 ring-8 ring-white dark:ring-slate-900">
                     <svg class="flex-shrink-0 size-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
                 </div>
                 <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200">1. Ambil Foto</h3>
@@ -119,7 +120,6 @@
             </div>
 
             <div class="text-center relative">
-                <div class="hidden md:block absolute top-8 -left-1/2 -z-10 w-full border-t border-dashed border-slate-300 dark:border-slate-700"></div>
                 <div class="mx-auto size-16 bg-emerald-100 text-emerald-600 dark:bg-emerald-900/30 dark:text-emerald-400 rounded-full flex items-center justify-center text-2xl mb-4 bg-white dark:bg-slate-900 ring-8 ring-white dark:ring-slate-900">
                     <svg class="flex-shrink-0 size-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                 </div>

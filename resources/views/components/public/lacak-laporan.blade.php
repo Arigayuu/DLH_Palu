@@ -59,7 +59,7 @@ new class extends Component
                 </div>
             </div>
 
-            <div class="flex justify-around items-center relative w-full px-2">
+            <div class="flex w-full relative z-0 mt-4">
                 @php
                     $steps = ['Menunggu', 'Diproses', 'Selesai'];
                     $currentIdx = array_search($laporan->status, $steps);
@@ -69,14 +69,21 @@ new class extends Component
                     }
                 @endphp
                 @foreach ($steps as $idx => $step)
-                    <div class="flex flex-col items-center text-center space-y-2">
-                        <div class="h-8 w-8 rounded-full flex items-center justify-center font-bold text-xs
+                    <div class="relative flex-1 text-center">
+                        @if ($idx < count($steps) - 1)
+                            <div class="absolute top-4 left-1/2 w-full h-[2px] bg-slate-200 dark:bg-slate-800 -z-10"></div>
+                            @if ($idx < $currentIdx)
+                                <div class="absolute top-4 left-1/2 w-full h-[2px] -z-10 {{ $laporan->status === 'Ditolak' ? 'bg-red-500' : 'bg-brand-500' }}"></div>
+                            @endif
+                        @endif
+
+                        <div class="mx-auto h-8 w-8 rounded-full flex items-center justify-center font-bold text-xs ring-8 ring-white dark:ring-slate-950
                             {{ $idx <= $currentIdx 
                                 ? ($laporan->status === 'Ditolak' ? 'bg-red-500 text-white shadow shadow-red-500/20' : 'bg-brand-500 text-white shadow shadow-brand-500/20')
                                 : 'bg-slate-100 dark:bg-slate-800 text-slate-400' }}">
                             {{ $idx + 1 }}
                         </div>
-                        <span class="text-xs font-bold uppercase tracking-wider">{{ $step }}</span>
+                        <span class="text-xs font-bold uppercase tracking-wider block mt-4">{{ $step }}</span>
                     </div>
                 @endforeach
             </div>

@@ -7,13 +7,7 @@
              L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                  attribution: '&copy; OpenStreetMap contributors'
              }).addTo(map);
-             const customIcon = L.icon({
-                 iconUrl: '{{ asset('assets/tracking/alarm.png') }}',
-                 iconSize: [32, 32],
-                 iconAnchor: [16, 32],
-                 popupAnchor: [0, -32]
-             });
-             L.marker([lat, lng], { icon: customIcon })
+             L.marker([lat, lng])
                  .addTo(map)
                  .bindPopup('<strong>{{ $getRecord()->nomor_tiket }}</strong><br>Kategori: {{ $getRecord()->kategori }}')
                  .openPopup();
