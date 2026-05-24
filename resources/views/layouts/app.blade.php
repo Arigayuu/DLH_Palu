@@ -65,42 +65,51 @@
                 </a>
             </div>
 
-            <nav class="hidden md:flex items-center gap-6">
+            <nav class="hidden lg:flex items-center gap-5 xl:gap-6">
                 <a href="/"
-                    class="text-sm font-semibold hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Beranda</a>
+                    class="text-sm font-semibold {{ request()->is('/') ? 'text-brand-600 dark:text-brand-400' : 'text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400' }} transition-colors">Beranda</a>
                 <a href="/armada"
-                    class="text-sm font-semibold hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Pelacakan Armada</a>
+                    class="text-sm font-semibold {{ request()->is('armada') ? 'text-brand-600 dark:text-brand-400' : 'text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400' }} transition-colors">Pelacakan Armada</a>
                 <a href="/lapor"
-                    class="text-sm font-semibold hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Pelaporan Pohon</a>
+                    class="text-sm font-semibold {{ request()->is('lapor') ? 'text-brand-600 dark:text-brand-400' : 'text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400' }} transition-colors">Pelaporan Pohon</a>
                 <a href="/lacak"
-                    class="text-sm font-semibold hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Lacak Pelaporan</a>
+                    class="text-sm font-semibold {{ request()->is('lacak') ? 'text-brand-600 dark:text-brand-400' : 'text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400' }} transition-colors">Lacak Pelaporan</a>
                 <a href="/survei"
-                    class="text-sm font-semibold hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Penilaian</a>
-                <a href=""`
-                    class="text-sm font-semibold hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Tentang Kami</a>
+                    class="text-sm font-semibold {{ request()->is('survei') ? 'text-brand-600 dark:text-brand-400' : 'text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400' }} transition-colors">Penilaian</a>
+                <a href="#"
+                    class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Tentang Kami</a>
             </nav>
 
             <div class="flex items-center gap-3">
                 <a href="/admin/login"
-                    class="hidden md:inline-block px-4 py-2 text-xs font-bold uppercase tracking-wider bg-brand-600 hover:bg-brand-700 text-white rounded-lg transition-colors shadow-sm shadow-brand-500/20">
+                    class="hidden lg:inline-block px-4 py-2 text-xs font-bold uppercase tracking-wider bg-brand-600 hover:bg-brand-700 text-white rounded-lg transition-colors shadow-sm shadow-brand-500/20">
                     Portal Admin
                 </a>
                 
-                <button @click="mobileMenuOpen = !mobileMenuOpen" type="button" class="md:hidden p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-slate-200 bg-white text-slate-800 shadow-sm hover:bg-slate-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-slate-700 dark:text-white dark:hover:bg-white/10">
+                <button @click="mobileMenuOpen = !mobileMenuOpen" type="button" class="lg:hidden p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-slate-200 bg-white text-slate-800 shadow-sm hover:bg-slate-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-slate-700 dark:text-white dark:hover:bg-white/10">
                     <svg class="flex-shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x-show="!mobileMenuOpen"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
                     <svg class="flex-shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x-show="mobileMenuOpen" style="display: none;"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
                 </button>
             </div>
         </div>
 
-        <div x-show="mobileMenuOpen" x-transition class="md:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900" style="display: none;">
-            <div class="flex flex-col px-4 pt-2 pb-4 space-y-1">
-                <a href="/" class="px-3 py-2 rounded-md text-base font-semibold text-slate-800 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800">Beranda</a>
-                <a href="/lapor" class="px-3 py-2 rounded-md text-base font-semibold text-slate-800 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800">Lapor Pohon</a>
-                <a href="/lacak" class="px-3 py-2 rounded-md text-base font-semibold text-slate-800 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800">Lacak Laporan</a>
-                <a href="/survei" class="px-3 py-2 rounded-md text-base font-semibold text-slate-800 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800">Survei IKM</a>
-                <a href="/armada" class="px-3 py-2 rounded-md text-base font-semibold text-slate-800 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800">Pelacakan Armada</a>
-                <a href="/admin/login" class="mt-4 px-3 py-2 rounded-md text-base font-bold text-brand-600 hover:bg-brand-50 dark:text-brand-400 dark:hover:bg-brand-900/20">Portal Admin</a>
+        <div x-show="mobileMenuOpen" 
+             x-transition:enter="transition ease-out duration-200"
+             x-transition:enter-start="opacity-0 -translate-y-2"
+             x-transition:enter-end="opacity-100 translate-y-0"
+             x-transition:leave="transition ease-in duration-150"
+             x-transition:leave-start="opacity-100 translate-y-0"
+             x-transition:leave-end="opacity-0 -translate-y-2"
+             class="lg:hidden absolute top-[100%] inset-x-0 border-b border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md shadow-lg" style="display: none;">
+            <div class="flex flex-col px-4 pt-2 pb-6 space-y-2">
+                <a href="/" class="px-3 py-2.5 rounded-lg text-base font-semibold {{ request()->is('/') ? 'bg-brand-50 text-brand-600 dark:bg-brand-900/30 dark:text-brand-400' : 'text-slate-800 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800' }}">Beranda</a>
+                <a href="/armada" class="px-3 py-2.5 rounded-lg text-base font-semibold {{ request()->is('armada') ? 'bg-brand-50 text-brand-600 dark:bg-brand-900/30 dark:text-brand-400' : 'text-slate-800 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800' }}">Pelacakan Armada</a>
+                <a href="/lapor" class="px-3 py-2.5 rounded-lg text-base font-semibold {{ request()->is('lapor') ? 'bg-brand-50 text-brand-600 dark:bg-brand-900/30 dark:text-brand-400' : 'text-slate-800 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800' }}">Pelaporan Pohon</a>
+                <a href="/lacak" class="px-3 py-2.5 rounded-lg text-base font-semibold {{ request()->is('lacak') ? 'bg-brand-50 text-brand-600 dark:bg-brand-900/30 dark:text-brand-400' : 'text-slate-800 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800' }}">Lacak Pelaporan</a>
+                <a href="/survei" class="px-3 py-2.5 rounded-lg text-base font-semibold {{ request()->is('survei') ? 'bg-brand-50 text-brand-600 dark:bg-brand-900/30 dark:text-brand-400' : 'text-slate-800 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800' }}">Penilaian</a>
+                <a href="#" class="px-3 py-2.5 rounded-lg text-base font-semibold text-slate-800 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800">Tentang Kami</a>
+                <div class="border-t border-slate-200 dark:border-slate-700 my-2 pt-2"></div>
+                <a href="/admin/login" class="px-3 py-2.5 rounded-lg text-base font-bold text-center bg-brand-600 text-white hover:bg-brand-700 shadow-sm">Portal Admin</a>
             </div>
         </div>
     </header>

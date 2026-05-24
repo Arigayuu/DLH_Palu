@@ -96,6 +96,41 @@
 
     <section class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <div class="text-center max-w-2xl mx-auto space-y-3">
+            <h2 class="text-3xl font-extrabold tracking-tight dark:text-slate-100">Cara Melapor Tanpa Ribet</h2>
+            <p class="text-slate-500 dark:text-slate-400">Sampaikan keluhan Anda dengan mudah dan cepat. Tanpa perlu mendaftar atau membuat akun.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center">
+                <div class="mx-auto size-16 bg-brand-100 text-brand-600 dark:bg-brand-900/30 dark:text-brand-400 rounded-full flex items-center justify-center text-2xl mb-4">
+                    <svg class="flex-shrink-0 size-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200">1. Ambil Foto</h3>
+                <p class="mt-2 text-slate-500 dark:text-slate-400 text-sm">Fotokan kondisi pohon yang bermasalah di lokasi Anda dengan jelas.</p>
+            </div>
+            
+            <div class="text-center relative">
+                <div class="hidden md:block absolute top-8 left-1/2 -z-10 w-full border-t border-dashed border-slate-300 dark:border-slate-700"></div>
+                <div class="mx-auto size-16 bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400 rounded-full flex items-center justify-center text-2xl mb-4 bg-white dark:bg-slate-900 ring-8 ring-white dark:ring-slate-900">
+                    <svg class="flex-shrink-0 size-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200">2. Dapatkan Tiket</h3>
+                <p class="mt-2 text-slate-500 dark:text-slate-400 text-sm">Kirim laporan tanpa perlu mendaftar akun. Sistem akan memberikan Nomor Tiket rahasia.</p>
+            </div>
+
+            <div class="text-center relative">
+                <div class="hidden md:block absolute top-8 -left-1/2 -z-10 w-full border-t border-dashed border-slate-300 dark:border-slate-700"></div>
+                <div class="mx-auto size-16 bg-emerald-100 text-emerald-600 dark:bg-emerald-900/30 dark:text-emerald-400 rounded-full flex items-center justify-center text-2xl mb-4 bg-white dark:bg-slate-900 ring-8 ring-white dark:ring-slate-900">
+                    <svg class="flex-shrink-0 size-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200">3. Pantau Real-time</h3>
+                <p class="mt-2 text-slate-500 dark:text-slate-400 text-sm">Gunakan Nomor Tiket tersebut untuk melacak progres pengerjaan oleh petugas kami.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        <div class="text-center max-w-2xl mx-auto space-y-3">
             <h2 class="text-3xl font-extrabold tracking-tight dark:text-slate-100">Kategori Pelayanan Pengaduan</h2>
             <p class="text-slate-500 dark:text-slate-400">Kami menangani berbagai keluhan terkait pemeliharaan pohon pelindung di ruang publik kota.</p>
         </div>
@@ -170,6 +205,34 @@
                     <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
                 </a>
             </div>
+        </div>
+    </section>
+
+    <section class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gradient-to-r from-brand-600 to-emerald-500 rounded-3xl p-8 sm:p-10 relative overflow-hidden shadow-xl">
+            <div class="absolute inset-0 bg-[url('https://preline.co/assets/svg/examples-dark/polygon-bg-element.svg')] opacity-20 mix-blend-overlay"></div>
+            <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8">
+                <div class="text-center lg:text-left max-w-2xl">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white mb-3">Bantu Kami Menjadi Lebih Baik</h2>
+                    <p class="text-brand-50 text-lg">Partisipasi Anda dalam mengisi Indeks Kepuasan Masyarakat (IKM) sangat berarti untuk evaluasi dan peningkatan kualitas layanan DLH Kota Palu.</p>
+                </div>
+                <div class="flex-shrink-0">
+                    <a href="/survei" class="inline-flex justify-center items-center gap-x-3 text-center bg-white text-brand-600 hover:bg-slate-50 text-sm font-bold rounded-xl focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-brand-600 py-3.5 px-6 shadow-lg transition-all hover:scale-[1.02]">
+                        <svg class="flex-shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="m9 15 2 2 4-4"/></svg>
+                        Isi Survei Kepuasan Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 bg-red-50 dark:bg-red-900/20 border border-red-100 dark:border-red-900/30 rounded-xl px-6 py-4 text-center">
+            <div class="flex items-center justify-center gap-2 text-red-600 dark:text-red-400">
+                <svg class="flex-shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span class="font-bold">Butuh Penanganan Sangat Mendesak?</span>
+            </div>
+            <span class="text-slate-600 dark:text-slate-400">Hubungi Call Center DLH Kota Palu: <a href="https://wa.me/6285191512076" target="_blank" rel="noopener noreferrer" class="font-bold text-emerald-600 dark:text-emerald-400 hover:text-emerald-700 dark:hover:text-emerald-300">0851-9151-2076 (WhatsApp)</a></span>
         </div>
     </section>
 
