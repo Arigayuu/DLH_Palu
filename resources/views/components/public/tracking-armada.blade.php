@@ -152,7 +152,26 @@ new class extends Component
                      document.head.appendChild(script);
                  }
              ">
-            <div x-ref="mapContainer" style="height: 550px; width: 100%; z-index: 1;" class="rounded-2xl"></div>
+            <div x-ref="mapContainer" style="height: 550px; width: 100%; z-index: 1;" class="rounded-t-2xl"></div>
+            
+        </div>
+        
+        <div class="p-4 bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 rounded-b-2xl">
+            <h4 class="font-bold text-xs text-slate-500 dark:text-slate-400 mb-4 uppercase tracking-wider text-center md:text-left">Legenda Armada Aktif</h4>
+            <div class="flex flex-col md:flex-row items-center justify-center md:justify-start gap-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 flex items-center justify-center bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700">
+                        <img src="/assets/tracking/car_acc_on.png" class="w-7 h-7 object-contain" alt="Pickup">
+                    </div>
+                    <span class="text-sm font-bold text-slate-700 dark:text-slate-200">Mobil Pickup (Roda 4)</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 flex items-center justify-center bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700">
+                        <img src="/assets/tracking/truck_acc_on.png" class="w-7 h-7 object-contain" alt="Dump Truck">
+                    </div>
+                    <span class="text-sm font-bold text-slate-700 dark:text-slate-200">Dump Truck (Roda 6)</span>
+                </div>
+            </div>
         </div>
     </div>
 </div>

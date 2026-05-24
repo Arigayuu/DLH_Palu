@@ -19,7 +19,7 @@
             
             <div id="vehicles-data-{{ $this->getId() }}" wire:key="vehicles-data-{{ $this->getId() }}" class="hidden" data-vehicles='@json($vehicles)' data-fit='@json($fitBounds)'></div>
 
-            <div wire:ignore id="map-wrapper-{{ $this->getId() }}"
+            <div wire:ignore id="map-wrapper-{{ $this->getId() }}" class="relative"
                  x-data="{
                      map: null,
                      markers: [],
@@ -139,6 +139,36 @@
                      });
                  ">
                 <div x-ref="mapContainer" style="height: 600px; width: 100%; z-index: 1;"></div>
+            </div>
+            
+            <div style="padding: 1rem; border-top: 1px solid #e2e8f0; background: #f8fafc;" class="dark:bg-gray-900 dark:border-gray-800 rounded-b-2xl">
+                <h4 style="font-size: 0.75rem; font-weight: 700; color: #64748b; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em;">Keterangan Ikon Armada</h4>
+                <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+                    <div style="display: flex; align-items: center; gap: 0.75rem;">
+                        <div style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: #fff; border-radius: 0.5rem; border: 1px solid #e2e8f0; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);" class="dark:bg-gray-800 dark:border-gray-700">
+                            <img src="/assets/tracking/car_acc_on.png" style="width: 24px; height: 24px; object-fit: contain;" alt="Pickup Aktif">
+                        </div>
+                        <span style="font-size: 0.875rem; font-weight: 600; color: #334155;" class="dark:text-gray-200">Pickup (Aktif)</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 0.75rem; opacity: 0.7;">
+                        <div style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: #fff; border-radius: 0.5rem; border: 1px solid #e2e8f0; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);" class="dark:bg-gray-800 dark:border-gray-700">
+                            <img src="/assets/tracking/car_parking.png" style="width: 24px; height: 24px; object-fit: contain;" alt="Pickup Parkir">
+                        </div>
+                        <span style="font-size: 0.875rem; font-weight: 500; color: #475569;" class="dark:text-gray-400">Pickup (Parkir)</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 0.75rem;">
+                        <div style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: #fff; border-radius: 0.5rem; border: 1px solid #e2e8f0; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);" class="dark:bg-gray-800 dark:border-gray-700">
+                            <img src="/assets/tracking/truck_acc_on.png" style="width: 24px; height: 24px; object-fit: contain;" alt="Dump Truck Aktif">
+                        </div>
+                        <span style="font-size: 0.875rem; font-weight: 600; color: #334155;" class="dark:text-gray-200">Dump Truck (Aktif)</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 0.75rem; opacity: 0.7;">
+                        <div style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: #fff; border-radius: 0.5rem; border: 1px solid #e2e8f0; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);" class="dark:bg-gray-800 dark:border-gray-700">
+                            <img src="/assets/tracking/truck_parking.png" style="width: 24px; height: 24px; object-fit: contain;" alt="Dump Truck Parkir">
+                        </div>
+                        <span style="font-size: 0.875rem; font-weight: 500; color: #475569;" class="dark:text-gray-400">Dump Truck (Parkir)</span>
+                    </div>
+                </div>
             </div>
         </div>
 
