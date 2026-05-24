@@ -87,7 +87,7 @@ class IkmStatsOverview extends BaseWidget
                 ->descriptionIcon('heroicon-m-shield-check')
                 ->color($data['gradeColor']),
             Stat::make('Konversi Persentase', "{$data['percentage']}%")
-                ->description('Standar KemenPAN-RB')
+                ->description('Dinas Lingkungan Hidup')
                 ->descriptionIcon('heroicon-m-chart-bar')
                 ->color('info'),
         ];
