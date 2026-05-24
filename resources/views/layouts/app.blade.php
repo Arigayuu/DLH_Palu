@@ -76,8 +76,8 @@
                     class="text-sm font-semibold {{ request()->is('lacak') ? 'text-brand-600 dark:text-brand-400' : 'text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400' }} transition-colors">Lacak Pelaporan</a>
                 <a href="/survei"
                     class="text-sm font-semibold {{ request()->is('survei') ? 'text-brand-600 dark:text-brand-400' : 'text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400' }} transition-colors">Penilaian</a>
-                <a href="#"
-                    class="text-sm font-semibold text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Tentang Kami</a>
+                <a href="/tentang"
+                    class="text-sm font-semibold {{ request()->is('tentang') ? 'text-brand-600 dark:text-brand-400' : 'text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400' }} transition-colors">Tentang Kami</a>
             </nav>
 
             <div class="flex items-center gap-3">
@@ -107,7 +107,7 @@
                 <a href="/lapor" class="px-3 py-2.5 rounded-lg text-base font-semibold {{ request()->is('lapor') ? 'bg-brand-50 text-brand-600 dark:bg-brand-900/30 dark:text-brand-400' : 'text-slate-800 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800' }}">Pelaporan Pohon</a>
                 <a href="/lacak" class="px-3 py-2.5 rounded-lg text-base font-semibold {{ request()->is('lacak') ? 'bg-brand-50 text-brand-600 dark:bg-brand-900/30 dark:text-brand-400' : 'text-slate-800 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800' }}">Lacak Pelaporan</a>
                 <a href="/survei" class="px-3 py-2.5 rounded-lg text-base font-semibold {{ request()->is('survei') ? 'bg-brand-50 text-brand-600 dark:bg-brand-900/30 dark:text-brand-400' : 'text-slate-800 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800' }}">Penilaian</a>
-                <a href="#" class="px-3 py-2.5 rounded-lg text-base font-semibold text-slate-800 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800">Tentang Kami</a>
+                <a href="/tentang" class="px-3 py-2.5 rounded-lg text-base font-semibold {{ request()->is('tentang') ? 'bg-brand-50 text-brand-600 dark:bg-brand-900/30 dark:text-brand-400' : 'text-slate-800 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800' }}">Tentang Kami</a>
                 <div class="border-t border-slate-200 dark:border-slate-700 my-2 pt-2"></div>
                 <a href="/admin/login" class="px-3 py-2.5 rounded-lg text-base font-bold text-center bg-brand-600 text-white hover:bg-brand-700 shadow-sm">Portal Admin</a>
             </div>

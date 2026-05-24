@@ -22,6 +22,10 @@ Route::get('/armada', function () {
     return view('public.armada');
 });
 
+Route::get('/tentang', function () {
+    return view('public.tentang');
+});
+
 Route::get('/api/armada-aktif', function () {
     return response()->json([
         'status' => true,
