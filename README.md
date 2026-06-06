@@ -39,10 +39,10 @@ Sistem layanan berbasis web untuk Dinas Lingkungan Hidup Kota Palu yang menyedia
 
 | Layer            | Technology           |
 | ---------------- | -------------------- |
-| Backend          | Laravel 12, PHP 8.2+ |
-| Admin Panel      | Filament             |
-| Frontend         | Blade, Livewire      |
-| CSS              | Tailwind CSS v4      |
+| Backend          | Laravel 13, PHP 8.4+ |
+| Admin Panel      | Filament v3            |
+| Frontend         | Blade, Livewire v3     |
+| CSS              | Tailwind CSS         |
 | Database         | MySQL                |
 | Mapping          | Leaflet.js           |
 | Export Data      | Laravel Excel        |
@@ -55,9 +55,9 @@ Sistem layanan berbasis web untuk Dinas Lingkungan Hidup Kota Palu yang menyedia
 
 ### Prasyarat
 
-* PHP 8.2+
+* PHP 8.4+
 * Composer
-* Node.js 18+
+* Node.js 22+
 * MySQL
 
 ### Setup Cepat
@@ -306,3 +306,17 @@ Panel administrator digunakan untuk:
 ## Lisensi
 
 Proyek ini dikembangkan untuk kebutuhan layanan Dinas Lingkungan Hidup Kota Palu.
+
+---
+
+
+##Tim Pengembang (Developers)
+
+Sistem ini dirancang dan diimplementasikan oleh tim mahasiswa Jurusan Teknologi Informasi, Fakultas Teknik, Universitas Tadulako:
+
+Aditya Zaldy — F52123027 
+Sapto Mart Saputra Wicaksono — F52123028  
+Andi Moh. Rafli — F52123029  
+Zaky Putra Safandra — F55123011  
+Fahril Antonio Hande — F55123031  
+I Wayan Arigayu Saputra — F55123044
