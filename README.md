@@ -314,7 +314,7 @@ Proyek ini dikembangkan untuk kebutuhan layanan Dinas Lingkungan Hidup Kota Palu
 
 Sistem ini dirancang dan diimplementasikan oleh tim mahasiswa Jurusan Teknologi Informasi, Fakultas Teknik, Universitas Tadulako:
 
-Aditya Zaldy — F52123027 
+Aditya Zaldy — F52123027
 Sapto Mart Saputra Wicaksono — F52123028  
 Andi Moh. Rafli — F52123029  
 Zaky Putra Safandra — F55123011  
