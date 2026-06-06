@@ -1,59 +1,308 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Sistem Pelaporan Pohon & Monitoring Armada DLH Kota Palu
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Sistem layanan berbasis web untuk Dinas Lingkungan Hidup Kota Palu yang menyediakan pelaporan kondisi pohon oleh masyarakat, pelacakan status laporan, survei Indeks Kepuasan Masyarakat (IKM), serta monitoring armada sampah secara real-time.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Fitur
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Pelaporan Pohon
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+* **Laporan Publik** — Masyarakat dapat melaporkan kondisi pohon melalui formulir online.
+* **Upload Foto** — Mendukung unggah foto sebagai bukti kondisi pohon.
+* **Tiket Otomatis** — Sistem menghasilkan nomor tiket unik untuk setiap laporan.
+* **Tracking Status** — Pelapor dapat memantau progres penanganan menggunakan nomor tiket.
 
-## Learning Laravel
+### Monitoring Armada
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+* **Pelacakan Real-Time** — Menampilkan posisi armada sampah yang sedang aktif.
+* **Peta Interaktif** — Menggunakan Leaflet untuk visualisasi lokasi armada.
+* **GPS Integration** — Data armada tersimpan pada cache GPS kendaraan.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Survei IKM
 
-## Laravel Sponsors
+* **Indeks Kepuasan Masyarakat** — Survei pelayanan DLH Kota Palu.
+* **7 Indikator Penilaian** — Meliputi prosedur, kecepatan pelayanan, biaya, sarana prasarana, kompetensi petugas, penanganan pengaduan, dan hasil layanan.
+* **Analisis Statistik** — Dashboard menampilkan distribusi dan tren nilai IKM.
+* **Export Data** — Hasil survei dapat diekspor ke Excel.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Manajemen Admin
 
-### Premium Partners
+* **Dashboard Monitoring** — Ringkasan laporan dan statistik layanan.
+* **Manajemen Laporan** — Verifikasi, penolakan, dan penyelesaian laporan masyarakat.
+* **Audit & Monitoring** — Pemantauan seluruh aktivitas layanan.
+* **Dashboard IKM** — Analisis hasil survei kepuasan masyarakat.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+## Stack
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+| Layer            | Technology           |
+| ---------------- | -------------------- |
+| Backend          | Laravel 12, PHP 8.2+ |
+| Admin Panel      | Filament             |
+| Frontend         | Blade, Livewire      |
+| CSS              | Tailwind CSS v4      |
+| Database         | MySQL                |
+| Mapping          | Leaflet.js           |
+| Export Data      | Laravel Excel        |
+| PDF              | DomPDF               |
+| Image Processing | Intervention Image   |
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Instalasi
 
-## Security Vulnerabilities
+### Prasyarat
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+* PHP 8.2+
+* Composer
+* Node.js 18+
+* MySQL
 
-## License
+### Setup Cepat
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```bash
+git clone <repo-url>
+cd DLH_Palu
+
+composer setup
+composer run dev
+```
+
+Buka:
+
+```text
+http://localhost:8000
+```
+
+---
+
+### Setup Manual
+
+```bash
+composer install
+
+cp .env.example .env
+
+php artisan key:generate
+```
+
+Sesuaikan konfigurasi database pada file `.env`:
+
+```env
+DB_DATABASE=dlh_palu
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+Jalankan migrasi:
+
+```bash
+php artisan migrate
+```
+
+Install dependency frontend:
+
+```bash
+npm install
+npm run build
+```
+
+Jalankan aplikasi:
+
+```bash
+composer run dev
+```
+
+---
+
+## Halaman Publik
+
+| URL      | Fungsi                     |
+| -------- | -------------------------- |
+| /        | Beranda                    |
+| /lapor   | Form laporan kondisi pohon |
+| /lacak   | Pelacakan status laporan   |
+| /survei  | Survei IKM                 |
+| /armada  | Monitoring armada sampah   |
+| /tentang | Informasi DLH Kota Palu    |
+
+---
+
+## Modul Sistem
+
+### Laporan Pohon
+
+Menyimpan data laporan masyarakat:
+
+* Nomor tiket otomatis
+* Nomor telepon pelapor
+* Kategori laporan
+* Deskripsi laporan
+* Lokasi GPS (latitude & longitude)
+* Status penanganan
+* Bukti foto laporan
+* Bukti penyelesaian
+
+Status laporan:
+
+```text
+Menunggu Verifikasi
+Diproses
+Ditolak
+Selesai
+```
+
+### Survei IKM
+
+Terdiri dari 7 indikator:
+
+1. Prosedur dan Persyaratan
+2. Kecepatan Waktu Petugas
+3. Biaya dan Tarif
+4. Kualitas Sarana dan Prasarana
+5. Kompetensi dan Perilaku Petugas
+6. Penanganan Pengaduan
+7. Hasil Layanan
+
+Sistem menghitung nilai rata-rata secara otomatis untuk setiap respon.
+
+### Tracking Armada
+
+Data armada diperoleh dari tabel:
+
+```text
+gps_vehicle_cache
+```
+
+Fitur:
+
+* Menampilkan armada aktif
+* Posisi GPS terkini
+* Integrasi peta Leaflet
+* Monitoring operasional armada sampah
+
+---
+
+## Struktur Proyek
+
+```text
+app/
+├── Console/
+│   └── Commands/
+│       └── FetchGpsData.php
+├── Exports/
+│   └── IkmResponseExport.php
+├── Filament/
+│   ├── Pages/
+│   │   ├── Dashboard.php
+│   │   ├── DashboardIkm.php
+│   │   └── TrackingArmada.php
+│   ├── Resources/
+│   │   ├── Laporans/
+│   │   └── IkmResponses/
+│   └── Widgets/
+│       ├── IkmBarChart.php
+│       ├── IkmDistributionWidget.php
+│       ├── IkmStatsOverview.php
+│       ├── IkmTrendChart.php
+│       └── TrackingMapWidget.php
+├── Models/
+│   ├── Laporan.php
+│   ├── LaporanFoto.php
+│   ├── IkmResponse.php
+│   ├── GpsVehicleCache.php
+│   └── User.php
+
+database/
+├── migrations/
+├── factories/
+└── seeders/
+
+resources/
+├── views/
+│   ├── public/
+│   │   ├── lapor.blade.php
+│   │   ├── lacak.blade.php
+│   │   ├── survei.blade.php
+│   │   ├── armada.blade.php
+│   │   └── tentang.blade.php
+│   └── layouts/
+```
+
+---
+
+## Perintah Penting
+
+### Development
+
+```bash
+composer run dev
+```
+
+Menjalankan:
+
+* Laravel Server
+* Queue Listener
+* Laravel Pail
+* Vite Dev Server
+
+### Build
+
+```bash
+npm run build
+```
+
+### Database
+
+```bash
+php artisan migrate
+```
+
+```bash
+php artisan migrate:fresh
+```
+
+### Testing
+
+```bash
+php artisan test
+```
+
+### GPS Armada
+
+```bash
+php artisan fetch:gps-data
+```
+
+*(sesuaikan dengan nama command jika telah didaftarkan pada aplikasi)*
+
+---
+
+## Dashboard Filament
+
+Panel administrator digunakan untuk:
+
+* Mengelola laporan masyarakat
+* Memverifikasi laporan
+* Memantau statistik layanan
+* Mengelola hasil survei IKM
+* Melihat lokasi armada secara real-time
+* Mengekspor data survei
+
+---
+
+## Kontribusi
+
+1. Buat branch baru dari branch utama.
+2. Lakukan perubahan yang diperlukan.
+3. Commit dengan pesan yang jelas.
+4. Push ke repository.
+5. Buat Pull Request.
+
+---
+
+## Lisensi
+
+Proyek ini dikembangkan untuk kebutuhan layanan Dinas Lingkungan Hidup Kota Palu.
