@@ -310,7 +310,7 @@ Proyek ini dikembangkan untuk kebutuhan layanan Dinas Lingkungan Hidup Kota Palu
 ---
 
 
-##Tim Pengembang (Developers)
+## Tim Pengembang (Developers)
 
 Sistem ini dirancang dan diimplementasikan oleh tim mahasiswa Jurusan Teknologi Informasi, Fakultas Teknik, Universitas Tadulako:
 
