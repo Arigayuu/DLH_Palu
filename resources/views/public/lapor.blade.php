@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Lapor Pohon - DLH Kota Palu')
+@section('title', 'Lapor Pohon - SAPA DLH Kota Palu')
 
 @section('content')
 <div class="max-w-3xl mx-auto space-y-6">

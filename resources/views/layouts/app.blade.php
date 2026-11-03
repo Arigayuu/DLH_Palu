@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@yield('title', 'Portal Operasional DLH Kota Palu')</title>
+    <title>@yield('title', 'SAPA - DLH Kota Palu')</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -126,8 +126,8 @@
                     <div class="flex items-center gap-3">
                         <img src="assets/images/logo_kota_palu.png" alt="Logo Kota Palu" class="h-12 w-auto object-contain">
                         <div>
-                            <h4 class="font-bold text-slate-900 dark:text-white text-sm tracking-wide uppercase">DLH Kota Palu</h4>
-                            <p class="text-xs text-slate-500 dark:text-slate-400">Dinas Lingkungan Hidup</p>
+                            <h4 class="font-bold text-slate-900 dark:text-white text-sm tracking-wide uppercase">SAPA DLH Kota Palu</h4>
+                            <p class="text-xs text-slate-500 dark:text-slate-400">Survei, Aduan, dan Pantau Armada</p>
                         </div>
                     </div>
                     <p class="text-xs leading-relaxed max-w-sm">

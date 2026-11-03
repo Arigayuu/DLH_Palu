@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Laporan Survei IKM - DLH Kota Palu</title>
+    <title>Laporan Survei IKM - SAPA DLH Kota Palu</title>
     <style>
         body {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;

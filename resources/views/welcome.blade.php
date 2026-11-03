@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Beranda - Dinas Lingkungan Hidup Kota Palu')
+@section('title', 'Beranda - SAPA DLH Kota Palu')
 
 @section('content')
 <div class="space-y-20 pb-16">
@@ -8,7 +8,7 @@
         <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-10">
             <div class="flex justify-center">
                 <span class="inline-flex items-center gap-x-2 bg-white border border-slate-200 text-xs text-slate-600 p-2 px-3 rounded-full transition hover:border-slate-300 dark:bg-slate-900 dark:border-slate-700 dark:text-slate-400">
-                    Sistem Layanan Publik Digital Terpadu
+                    SAPA · Survei, Aduan, dan Pantau Armada
                     <span class="flex items-center gap-x-1">
                         <span class="border-s border-slate-200 text-brand-600 ps-2 dark:text-brand-500 dark:border-slate-700">Explore</span>
                         <svg class="flex-shrink-0 size-4 text-brand-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
@@ -25,7 +25,7 @@
 
             <div class="mt-5 max-w-3xl text-center mx-auto">
                 <p class="text-lg text-slate-600 dark:text-slate-400">
-                    Sistem Layanan Informasi Publik (SILP) Dinas Lingkungan Hidup Kota Palu. Pantau pergerakan armada pengangkut sampah secara real-time, laporkan permasalahan lingkungan, dan sampaikan kepuasan pelayanan Anda secara transparan.
+                    SAPA (Survei, Aduan, dan Pantau Armada) Dinas Lingkungan Hidup Kota Palu. Pantau pergerakan armada pengangkut sampah secara real-time, laporkan permasalahan lingkungan, dan sampaikan kepuasan pelayanan Anda secara transparan.
                 </p>
             </div>
 
@@ -62,7 +62,7 @@
                         </h2>
                     </div>
                     <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-lg">
-                        "Dinas Lingkungan Hidup Kota Palu terus berupaya meningkatkan kualitas kebersihan, pengelolaan persampahan, dan pelestarian Ruang Terbuka Hijau. Melalui Sistem Layanan Informasi Publik (SILP) ini, kami wujudkan pelayanan yang lebih cepat, transparan, dan terintegrasi untuk kenyamanan seluruh warga Kota Palu."
+                        "Dinas Lingkungan Hidup Kota Palu terus berupaya meningkatkan kualitas kebersihan, pengelolaan persampahan, dan pelestarian Ruang Terbuka Hijau. Melalui SAPA (Survei, Aduan, dan Pantau Armada) ini, kami wujudkan pelayanan yang lebih cepat, transparan, dan terintegrasi untuk kenyamanan seluruh warga Kota Palu."
                     </p>
                     
                     <div class="grid sm:grid-cols-2 gap-4 mt-8">

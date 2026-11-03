@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Tentang Kami - Dinas Lingkungan Hidup Kota Palu')
+@section('title', 'Tentang Kami - SAPA DLH Kota Palu')
 
 @section('content')
 <div class="space-y-16 pb-16">
@@ -41,7 +41,7 @@
                     <div class="prose prose-lg dark:prose-invert text-slate-600 dark:text-slate-400">
                         <p class="leading-relaxed relative">
                             <span class="absolute -top-4 -left-6 text-6xl text-slate-200 dark:text-slate-800 font-serif opacity-50">"</span>
-                            Puji syukur ke hadirat Tuhan Yang Maha Esa. Selamat datang di portal resmi Sistem Layanan Informasi Publik (SILP) Dinas Lingkungan Hidup Kota Palu. Di era digital ini, kami berkomitmen untuk terus berinovasi memberikan pelayanan yang cepat, transparan, dan responsif.
+                            Puji syukur ke hadirat Tuhan Yang Maha Esa. Selamat datang di portal resmi SAPA (Survei, Aduan, dan Pantau Armada) Dinas Lingkungan Hidup Kota Palu. Di era digital ini, kami berkomitmen untuk terus berinovasi memberikan pelayanan yang cepat, transparan, dan responsif.
                         </p>
                         <p class="leading-relaxed mt-4">
                             Sistem ini kami hadirkan agar masyarakat Kota Palu dapat berpartisipasi aktif dalam menjaga keasrian, kebersihan, dan keamanan lingkungan kota kita tercinta. Mari bersama-sama wujudkan Palu yang bersih, hijau, dan nyaman.

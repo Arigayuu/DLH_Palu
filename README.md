@@ -1,4 +1,6 @@
-# Sistem Pelaporan Pohon & Monitoring Armada DLH Kota Palu
+# SAPA: Survei, Aduan, dan Pantau Armada DLH Kota Palu
+
+> Sebelumnya bernama SILP (Sistem Informasi Layanan Publik) DLH Kota Palu.
 
 Sistem layanan berbasis web untuk Dinas Lingkungan Hidup Kota Palu yang menyediakan pelaporan kondisi pohon oleh masyarakat, pelacakan status laporan, survei Indeks Kepuasan Masyarakat (IKM), serta monitoring armada sampah secara real-time.
 
