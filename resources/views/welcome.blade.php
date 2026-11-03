@@ -174,7 +174,7 @@
             
             <div class="text-center max-w-2xl mx-auto space-y-3 relative z-10 mb-10">
                 <h2 class="text-3xl font-extrabold tracking-tight text-white">Kesiapan Armada Operasional</h2>
-                <p class="text-slate-400">Armada kami siap merespons laporan warga di seluruh penjuru Kota Palu.</p>
+                <p class="text-slate-400">Pantau layanan lingkungan dan armada pengangkutan sampah Kota Palu secara digital.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
